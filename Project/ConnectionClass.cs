@@ -5,7 +5,7 @@ using System.Web;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace _2tierArchitecture
+namespace Project
 {
     public class ConnectionClass
     {

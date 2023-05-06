@@ -7,8 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Project
 {
-    
-    public partial class EmpReg : System.Web.UI.Page
+    public partial class AddProjectsEmp : System.Web.UI.Page
     {
         ConnectionClass obj = new ConnectionClass();
         protected void Page_Load(object sender, EventArgs e)
@@ -18,17 +17,16 @@ namespace Project
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string str = "insert into EmployeeTab values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + DropDownList1.SelectedItem.Text + "')";
+            string str = "insert into Projtab values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "')";
             int i = obj.Fn_Nonquery(str);
             if (i != 0)
             {
-                Label1.Text = "Inserted";
+                Label2.Text = "Inserted";
             }
             else
             {
-                Label2.Text = "Registration failed";
+                Label2.Text = "Failed";
             }
-
         }
     }
 }

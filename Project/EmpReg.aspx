@@ -34,7 +34,7 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2">
-                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="Large" Font-Underline="True" ForeColor="#0066CC" Text="EMPLOYEE REGISTRATION"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="X-Large" Font-Underline="True" ForeColor="#0099CC" Text="EMPLOYEE REGISTRATION"></asp:Label>
                     </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -69,7 +69,7 @@
                 <tr>
                     <td class="auto-style2">&nbsp;Address</td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox2" runat="server" TextMode="MultiLine"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="*You should enter an address" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -90,7 +90,7 @@
                         <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style4">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="*Enter a 10 digit mobile number" Font-Bold="True" ForeColor="Red" ValidationExpression="&quot;[0-9]{10}&quot;"></asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox3" ErrorMessage="*Enter a 10 digit mobile number" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style4"></td>
                     <td class="auto-style4"></td>
@@ -111,7 +111,7 @@
                         </asp:DropDownList>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Choose role" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DropDownList1" ErrorMessage="*Choose role" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -144,7 +144,7 @@
                 <tr>
                     <td class="auto-style2">Password</td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox5" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -160,7 +160,7 @@
                 <tr>
                     <td class="auto-style2">Confirm password</td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox6" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td>
                         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox5" ControlToValidate="TextBox6" ErrorMessage="*Password mismatch" Font-Bold="True" ForeColor="Red"></asp:CompareValidator>
