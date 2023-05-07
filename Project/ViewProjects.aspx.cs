@@ -64,7 +64,7 @@ namespace Project
             TextBox TextBox3 = (TextBox)GridView1.Rows[i].Cells[3].Controls[0];
             
 
-            string upd = "update ProjTab set ProjName='" + TextBox1.Text + "' ,ProjTime='" + TextBox2.Text + "',ProjDesc='" + TextBox3.Text + "' ";
+            string upd = "update ProjTab set ProjName='" + TextBox1.Text + "' ,ProjTime='" + TextBox2.Text + "',ProjDesc='" + TextBox3.Text + "' where ProjId="+usrid+" ";
             int b = obj.Fn_Nonquery(upd);
 
             GridView1.EditIndex = -1;

@@ -27,11 +27,13 @@
                 <tr>
                     <td class="auto-style3">
                        
-                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large" ForeColor="#00CC99" Text="Welcome"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large" ForeColor="#0099CC" Text="Welcome"></asp:Label>
                     </td>
                     <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" PostBackUrl="~/Login.aspx" Text="Log out" />
+                    </td>
                     <td class="auto-style2">&nbsp;</td>
                 </tr>
                 <tr>
@@ -43,7 +45,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/AddProjectsEmp.aspx" Font-Size="Large">Add project</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/AddProjEmp.aspx" Font-Size="Large">Add project</asp:LinkButton>
                     </td>
                     <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>

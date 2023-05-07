@@ -22,11 +22,6 @@ namespace Project
             if (cid == "1")
             {
 
-                //string selid = "select Id from EmployeeTab where Username='" + TextBox1.Text + "'and Password='" + TextBox2.Text + "'";
-                //string id = obj.Fn_Scalar(selid);
-                //Session["userid"] = id;
-                //Response.Redirect("Home.aspx");
-
                 string emprole = "select Role from EmployeeTab where Username='" + TextBox1.Text + "'and Password='" + TextBox2.Text + "'";
                 string role = obj.Fn_Scalar(emprole);
                 if (role == "Employee")

@@ -68,8 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddProject.aspx" />
-    <Content Include="AddProjectsEmp.aspx" />
-    <Content Include="AddProjectsMngr.aspx" />
+    <Content Include="AddProjEmp.aspx" />
+    <Content Include="AddProjMngr.aspx" />
     <Content Include="EmpReg.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="HomeEmp.aspx" />
@@ -88,19 +88,19 @@
     <Compile Include="AddProject.aspx.designer.cs">
       <DependentUpon>AddProject.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddProjectsEmp.aspx.cs">
-      <DependentUpon>AddProjectsEmp.aspx</DependentUpon>
+    <Compile Include="AddProjEmp.aspx.cs">
+      <DependentUpon>AddProjEmp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddProjectsEmp.aspx.designer.cs">
-      <DependentUpon>AddProjectsEmp.aspx</DependentUpon>
+    <Compile Include="AddProjEmp.aspx.designer.cs">
+      <DependentUpon>AddProjEmp.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddProjectsMngr.aspx.cs">
-      <DependentUpon>AddProjectsMngr.aspx</DependentUpon>
+    <Compile Include="AddProjMngr.aspx.cs">
+      <DependentUpon>AddProjMngr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddProjectsMngr.aspx.designer.cs">
-      <DependentUpon>AddProjectsMngr.aspx</DependentUpon>
+    <Compile Include="AddProjMngr.aspx.designer.cs">
+      <DependentUpon>AddProjMngr.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConnectionClass.cs" />
     <Compile Include="EmpReg.aspx.cs">

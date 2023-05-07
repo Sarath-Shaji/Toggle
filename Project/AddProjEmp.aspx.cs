@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Project
 {
-    public partial class AddProjectsMngr : System.Web.UI.Page
+    public partial class AddProjEmp : System.Web.UI.Page
     {
         ConnectionClass obj = new ConnectionClass();
         protected void Page_Load(object sender, EventArgs e)

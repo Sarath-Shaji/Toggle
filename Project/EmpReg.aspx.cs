@@ -22,7 +22,7 @@ namespace Project
             int i = obj.Fn_Nonquery(str);
             if (i != 0)
             {
-                Label1.Text = "Inserted";
+                Label2.Text = "Inserted";
             }
             else
             {

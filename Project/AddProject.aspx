@@ -15,6 +15,9 @@
         .auto-style3 {
             height: 29px;
         }
+        .auto-style4 {
+            height: 38px;
+        }
     </style>
 </head>
 <body>
@@ -22,14 +25,16 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td>
-                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="X-Large" ForeColor="#0099CC" Text="Add Projects"></asp:Label>
+                    <td class="auto-style4">
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="X-Large" ForeColor="#0099CC" Text="ADD PROJECTS"></asp:Label>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style4">
+                        <asp:Button ID="Button2" runat="server" PostBackUrl="~/Home.aspx" Text="Home page" />
+                    </td>
+                    <td class="auto-style4"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
@@ -58,7 +63,7 @@
                     <td class="auto-style2"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">Project time</td>
+                    <td class="auto-style3">Submit time</td>
                     <td class="auto-style3">
                         <asp:TextBox ID="TextBox2" runat="server" TextMode="Date"></asp:TextBox>
                     </td>
@@ -96,7 +101,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="ADD" />
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

@@ -20,10 +20,12 @@
             <table class="auto-style2">
                 <tr>
                     <td>
-                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="X-Large" ForeColor="#0099CC" Text="Project details"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="X-Large" ForeColor="#0099CC" Text="PROJECT DETAILS"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" PostBackUrl="~/HomeMngr.aspx" Text="Home page" />
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style1">&nbsp;</td>
