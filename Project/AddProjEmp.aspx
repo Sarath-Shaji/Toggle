@@ -65,7 +65,7 @@
                 <tr>
                     <td class="auto-style3">Submit time</td>
                     <td class="auto-style3">
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox2" runat="server" TextMode="Date"></asp:TextBox>
                     </td>
                     <td class="auto-style3"></td>
                     <td class="auto-style3"></td>

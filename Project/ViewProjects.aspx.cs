@@ -59,12 +59,12 @@ namespace Project
             int i = e.RowIndex;
             int usrid = Convert.ToInt32(GridView1.DataKeys[i].Value);
 
-            TextBox TextBox1 = (TextBox)GridView1.Rows[i].Cells[1].Controls[0];
-            TextBox TextBox2 = (TextBox)GridView1.Rows[i].Cells[2].Controls[0];
-            TextBox TextBox3 = (TextBox)GridView1.Rows[i].Cells[3].Controls[0];
+            TextBox textname = (TextBox)GridView1.Rows[i].Cells[1].Controls[0];
+            TextBox texttime = (TextBox)GridView1.Rows[i].Cells[2].Controls[0];
+            TextBox textdesc = (TextBox)GridView1.Rows[i].Cells[3].Controls[0];
             
 
-            string upd = "update ProjTab set ProjName='" + TextBox1.Text + "' ,ProjTime='" + TextBox2.Text + "',ProjDesc='" + TextBox3.Text + "' where ProjId="+usrid+" ";
+            string upd = "update ProjTab set ProjName='" + textname.Text + "' ,ProjTime='" + texttime.Text + "',ProjDesc='" + textdesc.Text + "' where ProjId="+usrid+" ";
             int b = obj.Fn_Nonquery(upd);
 
             GridView1.EditIndex = -1;
